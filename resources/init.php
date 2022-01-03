@@ -4,8 +4,11 @@
 //hãy sử dụng mysqlii hoặc PDO thay thế trong C: \ wamp64 \ www \ kblog \ resources \ init.php trên dòng 4 * /
 //xử lý lỗi để chấp nhận tiện ích mở rộng mysqli không dùng nữa
 error_reporting(1); //handles error to accept deprecated mysqli extension
-
+$DATABASE_HOST = '178.128.55.129';
+$DATABASE_USER = 'root';
+$DATABASE_PASS = 'aaaa1111AA';
+$DATABASE_NAME = 'blog';
 include_once('config.inc.php');
-$conn=mysqli_connect(DB_HOST,DB_USER,DB_PASS,DB_NAME);
+$conn=mysqli_connect($DATABASE_HOST,$DATABASE_USER,$DATABASE_PASS,$DATABASE_NAME);
 include_once('functions/blog.php');
 ?>

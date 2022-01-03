@@ -7,9 +7,9 @@ if (!isset($_SESSION['loggedin'])) {
 	header('Location: login.php');
 	exit;
 }
-$DATABASE_HOST = 'localhost';
+$DATABASE_HOST = '178.128.55.129';
 $DATABASE_USER = 'root';
-$DATABASE_PASS = '';
+$DATABASE_PASS = 'aaaa1111AA';
 $DATABASE_NAME = 'blog';
 $con = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
 // trả về lỗi cú pháp của lần kết nối tới MySQL server gần nhất.

@@ -49,9 +49,9 @@
 
 <?php
 session_start();
-$DATABASE_HOST = '127.0.0.1';
+$DATABASE_HOST = '178.128.55.129';
 $DATABASE_USER = 'root';
-$DATABASE_PASS = '';
+$DATABASE_PASS = 'aaaa1111AA';
 $DATABASE_NAME = 'blog';
 $con = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
 if ( mysqli_connect_errno() ) {
